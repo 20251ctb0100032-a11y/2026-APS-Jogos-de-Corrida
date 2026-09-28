@@ -1,20 +1,19 @@
-# Nome do Sistema: o que ele faz, em uma frase
+# Informativo de Jogos de corrida: Mostra os melhores jogos de corrida levando em conta todas as eras de console;
 
 > **Antes de tudo.** Este é o modelo do Projeto Integrador de Análise e Projeto de Sistemas. Se você está lendo isto no seu próprio repositório, deu certo. Troque o título acima pelo nome do seu sistema e por uma frase que diga o que ele faz, preencha a autoria e o cliente e apague este aviso.
 
 Projeto Integrador de Análise e Projeto de Sistemas, 2026.
 IFPR, Centro de Referência Ponta Grossa. Técnico em Informática Integrado ao Ensino Médio.
 
-**Autoria:** _seu nome, como aparece no AVA_
+**Autoria:** Luiz Carlos Oliveira Neto;
 
-**Cliente:** _o papel do cliente e a relação dele com você, no máximo com o primeiro nome. Por exemplo, "Dona Rosa, minha avó, que faz marmita por encomenda"._
+**Cliente:** Rafael, estudante e entusiasta de jogos de corrida, que deseja um sistema para pesquisar, conhecer e comparar jogos de corrida de diferentes gerações de consoles.
 
 ## Apresentação do projeto
 
 <!-- Três a cinco frases para quem nunca ouviu falar do seu sistema. Qual é o problema, para quem, e o que o sistema faz a respeito.
      Escreva depois de terminar a 4.1. É um resumo dela, com as suas palavras. -->
-
-_Escreva aqui a apresentação do projeto._
+O projeto é um sistema que mostra jogos de corrida de diferentes consoles e épocas. Ele apresenta informações básicas sobre cada jogo, ajudando o usuário a conhecer e pesquisar diferentes títulos.
 
 ## Documento do projeto
 
@@ -59,4 +58,4 @@ O exemplo cresce a cada aula no [repositório do modelo](https://github.com/Prof
 
 ---
 
-**Profe. Berssa** | Dr. João Henrique Berssanette
+**Luiz Carlos** | Luiz Carlos Oliveira Neto
