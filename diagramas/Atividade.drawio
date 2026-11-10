@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="uNIDRpGBXrpcPChIU3_b">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="raia_admin" parent="1" style="swimlane;startSize=25;horizontal=1;html=1;whiteSpace=wrap;collapsible=0;fillColor=#f5f5f5;fontStyle=1;" value="Administrador" vertex="1">
+          <mxGeometry height="720" width="300" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="inicio" parent="raia_admin" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="junc1" parent="raia_admin" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act1" parent="raia_admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Solicitar operação" vertex="1">
+          <mxGeometry height="40" width="140" x="80" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="act_cad" parent="raia_admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Cadastrar novo jogo" vertex="1">
+          <mxGeometry height="40" width="140" x="80" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act_conf" parent="raia_admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Confirmar operação" vertex="1">
+          <mxGeometry height="40" width="140" x="80" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="raia_admin" source="inicio" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="junc1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="raia_admin" source="junc1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="raia_admin" source="act_cad" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0;entryY=0.5;" target="junc1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="raia_sis" parent="1" style="swimlane;startSize=25;horizontal=1;html=1;whiteSpace=wrap;collapsible=0;fillColor=#f5f5f5;fontStyle=1;" value="Sistema" vertex="1">
+          <mxGeometry height="720" width="360" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act2" parent="raia_sis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Buscar jogo no acervo" vertex="1">
+          <mxGeometry height="40" width="150" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dec1" parent="raia_sis" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="jogo encontrado?" vertex="1">
+          <mxGeometry height="70" width="140" x="45" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="act3" parent="raia_sis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Verificar disponibilidade" vertex="1">
+          <mxGeometry height="40" width="150" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="dec2" parent="raia_sis" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="está disponível?" vertex="1">
+          <mxGeometry height="60" width="140" x="45" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="act_err" parent="raia_sis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Exibir aviso indisponível" vertex="1">
+          <mxGeometry height="40" width="135" x="210" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="end_err" parent="raia_sis" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="262" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="act_reg" parent="raia_sis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Atualizar status e registrar" vertex="1">
+          <mxGeometry height="40" width="150" x="40" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="end_ok" parent="raia_sis" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="raia_sis" source="act2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="dec1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="raia_sis" source="dec1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act3" value="[sim]">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="raia_sis" source="act3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="dec2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="raia_sis" source="dec2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="act_err" value="[não]">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="raia_sis" source="act_err" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="end_err" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="raia_sis" source="act_reg" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="end_ok" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="act2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="dec1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="act_cad" value="[não]">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="dec2" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="act_conf" value="[sim]">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="act_conf" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" target="act_reg" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
